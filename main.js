@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca9a44568efbbe42d4cf8bab6fd157d81729259c
 const drink_container = document.getElementById("drink");
 const search = document.querySelector(".search");
 
