@@ -1,4 +1,3 @@
-const get_drink_btn = document.getElementById("get_drink");
 const drink_container = document.getElementById("drink");
 const search = document.querySelector(".search");
 
