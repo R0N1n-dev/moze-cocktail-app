@@ -36,14 +36,18 @@ const createDrink = (drink) => {
   }
 
   const newInnerHTML = `
-		<div class="row">
-			<div class="columns five">
+		<div class="card">
+			<div class="card-image img-responsive">
 				<img src="${drink.strDrinkThumb}" alt="Drink Image">
+        </div>
+        <div class="card-header">
+        <div class="card-title">
 				${
           drink.strCategory
             ? `<p><strong>Category:</strong> ${drink.strCategory}</p>`
             : ""
-        }
+        }</div>
+        <div class="card-subtitle">
 				${drink.strArea ? `<p><strong>Area:</strong> ${drink.strArea}</p>` : ""}
 				${
           drink.strTags
@@ -52,12 +56,16 @@ const createDrink = (drink) => {
                 .join(", ")}</p>`
             : ""
         }
+        </div>
+        <div class="card-body">
 				<h5>Ingredients:</h5>
 				<ul>
 					${ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("")}
 				</ul>
+          </div>
+        </div>
 			</div>
-			<div class="columns seven">
+			<div class="card-footer">
 				<h4>${drink.strDrink}</h4>
 				<p>${drink.strInstructions}</p>
 			</div>
