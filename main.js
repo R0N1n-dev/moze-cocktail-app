@@ -41,7 +41,7 @@ const createDrink = (drink) => {
 				<img src="${drink.strDrinkThumb}" alt="Drink Image">
         </div>
         <div class="card-header">
-        <div class="card-title">
+          <div class="card-title">
 				${
           drink.strCategory
             ? `<p><strong>Category:</strong> ${drink.strCategory}</p>`
@@ -64,13 +64,13 @@ const createDrink = (drink) => {
 				</ul>
           </div>
         </div>
+        <div class="card-footer">
+          <h4>${drink.strDrink}</h4>
+          <p>${drink.strInstructions}</p>
+			  </div>
 			</div>
-			<div class="card-footer">
-				<h4>${drink.strDrink}</h4>
-				<p>${drink.strInstructions}</p>
-			</div>
+			
 		</div>
 	`;
-
   drink_container.innerHTML = newInnerHTML;
 };
